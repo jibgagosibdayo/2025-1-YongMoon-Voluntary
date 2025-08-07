@@ -1,0 +1,78 @@
+<link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600;800&display=swap" rel="stylesheet" />
+  
+
+
+  <header class="header">
+    <h1 id="name">주찬휘</h1>
+    <p>생각을 나누는 공간에 오신 걸 환영합니다</p>
+    <button id="darkToggle" aria-label="다크모드 토글">다크모드</button>
+  </header>
+
+  <div class="container">
+    <div class="profile-box">
+      <h2>🙋‍♂️ 주찬휘</h2>
+      <p>나이: 고1</p>
+      <p>성별: 남</p>
+      <div class="intro">
+        <p>안녕하세요! 저는 고등학교 1학년에 재학 중인 주찬휘입니다. 인공지능과 컴퓨터공학에 큰 흥미를 가지고 매일 열심히 공부하고 있습니다. 저만의 길을 찾아가는 과정을 이 블로그에 담고 싶습니다.</p>
+      </div>
+    </div>
+
+    <div class="posts">
+      <h3>📝 최근 게시글</h3>
+
+      <div class="post-card">
+        <button class="delete-btn" aria-label="게시글 삭제">삭제</button>
+        <h4>나의 꿈</h4>
+        <img src="https://cdn-icons-png.flaticon.com/512/4712/4712100.png" alt="AI 아이콘" />
+        <p>저의 꿈은 사람들의 삶을 더 편리하게 만드는 AI 기술을 개발하는 개발자가 되는 것입니다. 문제를 해결하는 기술을 통해 세상에 기여하고 싶습니다.</p>
+        <button class="like-btn" aria-label="좋아요 버튼">👍 좋아요</button>
+        <span class="like-count">0</span>
+        <div class="comments-section">
+          <input type="text" class="comment-input" placeholder="댓글을 입력하세요" />
+          <button class="comment-add-btn">댓글 달기</button>
+          <ul class="comment-list"></ul>
+        </div>
+      </div>
+
+      <div class="post-card">
+        <button class="delete-btn" aria-label="게시글 삭제">삭제</button>
+        <h4>나의 관심사</h4>
+        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="코딩 아이콘" />
+        <p>프로그래밍, 인공지능, 웹 개발에 관심이 많습니다. 특히 Python과 딥러닝 프레임워크를 활용한 프로젝트에 도전해보고 싶어요.</p>
+        <button class="like-btn" aria-label="좋아요 버튼">👍 좋아요</button>
+        <span class="like-count">0</span>
+        <div class="comments-section">
+          <input type="text" class="comment-input" placeholder="댓글을 입력하세요" />
+          <button class="comment-add-btn">댓글 달기</button>
+          <ul class="comment-list"></ul>
+        </div>
+      </div>
+
+      <div class="post-card">
+        <button class="delete-btn" aria-label="게시글 삭제">삭제</button>
+        <h4>나의 생각</h4>
+        <img src="https://cdn-icons-png.flaticon.com/512/2909/2909890.png" alt="생각 아이콘" />
+        <p>매일 조금씩이라도 앞으로 나아가는 것이 중요하다고 생각합니다. 완벽보다는 꾸준함이 더 큰 결과를 만든다고 믿고 있어요.</p>
+        <button class="like-btn" aria-label="좋아요 버튼">👍 좋아요</button>
+        <span class="like-count">0</span>
+        <div class="comments-section">
+          <input type="text" class="comment-input" placeholder="댓글을 입력하세요" />
+          <button class="comment-add-btn">댓글 달기</button>
+          <ul class="comment-list"></ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <h3>📤 새 게시글 추가</h3>
+      <input type="text" id="title" placeholder="제목을 입력하세요" />
+      <textarea id="content" rows="4" placeholder="내용을 입력하세요 (Markdown 지원)"></textarea>
+      <input type="text" id="image" placeholder="아이콘 또는 이미지 URL (선택)" />
+      <button id="addBtn">게시글 추가</button>
+    </div>
+  </div>
+
+  <footer>&copy; 2025 주찬휘. All rights reserved.</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
